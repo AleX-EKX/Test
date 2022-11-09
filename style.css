@@ -1,0 +1,157 @@
+header{
+    
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    
+}
+header a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    border-radius: 4px;
+
+  }
+  header a:hover {
+    background-color: #FBC02D;
+    color: #212121;
+  }
+  
+  header a.active {
+    background-color: #FBC02D;
+  }
+
+.navigation{
+    /* padding-left: 150px; */
+    /* padding-right: 80px; */
+    /* margin-left: auto; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.table_sort{
+    margin-right: auto;
+    margin-left: auto;
+}
+.table_sort table {
+    border-collapse: collapse;
+}
+
+.table_sort th {
+    color: #ffebcd;
+    background: #008b8b;
+    cursor: pointer;
+}
+
+.table_sort td,
+.table_sort th {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #846868;
+}
+
+.table_sort tbody tr:nth-child(even) {
+    background: #e3e3e3;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
+}
+.delete_table{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itogo{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.cheking{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: black;
+    transition: .2s;
+    color: white;
+}
+.cheking:hover{
+    background-color: #069df5;
+    cursor: pointer;
+    box-shadow: 0 6px 0 red;
+}
+.cheking:active{
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 #02f55f;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  .create-tovar{
+    margin-top: 20px;
+  }
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  .btn_create{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.back{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close {
+    margin: 0px 0px 0px 10px;
+    color: red;
+    cursor: pointer;
+}
+ 
+.total {
+    width: fit-content;
+    background: #bebaff;
+    padding: 10px;
+}
+
